@@ -6,8 +6,8 @@
         <img :src="projectImage" />
 
         <q-card-section>
-          <div class="text-overline text-orange-9">{{ projectStack }}</div>
-          <div class="text-h4 q-mt-sm q-mb-xs">{{ projectName }}</div>
+          <div class="text-overline text-orange-8">{{ projectStack }}</div>
+          <div class="text-h5 q-mt-sm q-mb-xs">{{ projectName }}</div>
           <div class="text-caption text-grey">
             {{ projectDesc }}
           </div>
@@ -64,6 +64,15 @@ setup() {
 }
 </script>
 
-<style>
+<style lang="scss" scopped>
+
+.my-card {
+  width: 100%;
+  float: right;
+  color:rgb(68, 68, 68);
+  background: black;
+  // border-style: solid;
+  border-radius: 15px;
+}
 
 </style>
