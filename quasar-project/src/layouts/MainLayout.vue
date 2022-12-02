@@ -3,15 +3,11 @@
     <q-layout view="lHh Lpr lFf">
       <q-page-container class="head">
         <IntroBanner />
-      </q-page-container>
 
-      <q-page-container>
         <NavMenu />
-      </q-page-container>
 
-      <q-page-container>
         <div class="row cards">
-          <div class="col-12 col-md-4" v-for="i in projectList" :key="i">
+          <div class="col-md-3" v-for="i in projectList" :key="i">
             <ProjectCard
               :projectName="i.projectName"
               :projectStack="i.projectStack"
@@ -132,10 +128,13 @@ export default defineComponent({
   width: 100%;
 }
 .main {
-  background: black;
+  background: rgb(0, 0, 0);
 }
 
-.bg {
-  background: black;
+.cards {
+  overflow: visible;
+  height: auto;
+  background: rgb(0, 0, 0);
+  min-width: auto;
 }
 </style>
