@@ -1,1 +1,18 @@
 // app global css in SCSS form
+
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/RobotoMono-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kanit Medium";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Kanit-Medium.ttf") format("truetype");
+  font-display: swap;
+}

@@ -1,11 +1,12 @@
 <template>
   <div>
+
     <q-card class="my-card">
       <img :src="projectImage" />
 
       <q-card-section>
         <div class="text-overline text-orange-8">{{ projectStack }}</div>
-        <div class="text-h5 q-mt-sm q-mb-xs">{{ projectName }}</div>
+        <div class="text-h6 q-mt-sm q-mb-xs">{{ projectName }}</div>
         <div class="text-caption text-grey">
           {{ projectDesc }}
         </div>
@@ -63,9 +64,10 @@ export default {
   min-height: 420px;
   float: right;
   color: rgb(68, 68, 68);
-  background: black;
+  background: rgb(28, 28, 28);
   border-bottom: 5px solid rgb(68, 68, 68);
   border-left: 5px solid rgb(68, 68, 68);
   border-radius: 15px;
 }
+
 </style>

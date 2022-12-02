@@ -1,7 +1,7 @@
 <template>
-  <div class="col q-pa-sm" align="left">
-    <div class="float-child-left">
-      <q-btn fixed round class="row" size="25px" color="black" icon="home">
+  <div class="sticky" >
+
+      <q-btn fixed round class="row btn" size="15px" color="black" icon="home">
         <q-tooltip
           transition-show="scale"
           transition-hide="scale"
@@ -12,7 +12,7 @@
           <strong>HOME</strong>
         </q-tooltip>
       </q-btn>
-      <q-btn fixed round class="row" size="25px" color="black" icon="work">
+      <q-btn fixed round class="row btn" size="15px" color="black" icon="work">
         <q-tooltip
           transition-show="scale"
           transition-hide="scale"
@@ -24,7 +24,7 @@
         </q-tooltip>
       </q-btn>
     </div>
-  </div>
+
 </template>
 
 <script>
@@ -34,10 +34,24 @@ export default {
 </script>
 
 <style lang="scss" scopped>
-.float-child-left {
-  min-width: 1%;
+
+div.sticky {
+  background: rgb(47, 47, 47);
+
   float: left;
-  margin-top: 20%;
+ // margin: auto;
+ height: 1000px;
   color: rgb(70, 70, 70);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgb(35, 35, 35);
+  margin: auto;
+  padding:5px;
+
+padding-top: 25%;
+}
+.btn{
+  padding:10px;
 }
 </style>

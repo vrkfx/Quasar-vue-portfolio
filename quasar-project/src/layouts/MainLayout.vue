@@ -2,10 +2,15 @@
   <div class="main">
     <q-layout view="lHh Lpr lFf">
       <q-page-container class="head">
-        <IntroBanner />
+
 
         <NavMenu />
 
+        <IntroBanner />
+
+        <ProgressBar/>
+
+        <h3 class="projectHead"> Projects </h3>
         <div class="row cards">
           <div class="col-md-3" v-for="i in projectList" :key="i">
             <ProjectCard
@@ -32,6 +37,7 @@ import { defineComponent, ref } from "vue";
 import ProjectCard from "src/components/ProjectCard.vue";
 import IntroBanner from "src/components/IntroBanner.vue";
 import NavMenu from "src/components/NavMenu.vue";
+import ProgressBar from "src/components/ProgressBar.vue";
 
 const linksList = [
   {
@@ -97,6 +103,7 @@ const projectList = [
     projectImage:
       "https://cdn.shopify.com/s/files/1/0306/6419/6141/articles/coding_languages_900x.png?v=1619126283",
   },
+
 ];
 
 export default defineComponent({
@@ -106,6 +113,7 @@ export default defineComponent({
     ProjectCard,
     NavMenu,
     IntroBanner,
+    ProgressBar,
   },
 
   setup() {
@@ -130,6 +138,12 @@ export default defineComponent({
 .main {
   background: rgb(0, 0, 0);
 }
+.projectHead{
+  color: white;
+  text-align: center;
+}
+
+
 
 .cards {
   overflow: visible;
